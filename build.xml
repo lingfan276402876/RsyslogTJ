@@ -1,0 +1,98 @@
+<?xml version="1.0" ?>
+<project default="publish" basedir=".">
+	<property name="jar.name" value="rsyslog.jar" />
+	<!-- base directory for distribution target -->
+	<property name="dist.home" value="${basedir}/dist" />
+	<!-- base directory for compilation targets -->
+	<property name="build.home" value="${basedir}/build" />
+	<!-- The base directory for all libraries (jar) files -->
+	<property name="lib.home" value="${basedir}/lib" />
+	<property name="src.home" value="${basedir}/src" />
+	<property name="publishdir" value="e:/rsyslog" />
+	<property name="mainclass" value="cn.uc.rsyslog.main.Server" />
+
+	<path id="project.class.path">
+		<fileset dir="${lib.home}">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+
+
+	<target name="clean" >
+		<delete dir="${build.home}"/>
+		<delete dir="${dist.home}"/>
+		<delete dir="${publishdir}"/>
+	</target>
+
+	<target name="compile" depends="clean">
+		<mkdir dir="${build.home}"/>
+		<mkdir dir="${dist.home}"/>
+		<mkdir dir="${publishdir}"/>
+		<javac srcdir="${src.home}" destdir="${build.home}" debug="true" encoding="utf-8">
+			<classpath refid="project.class.path" />
+		</javac>
+		<copy todir="${build.home}" >
+			<fileset dir="${src.home}" >
+				<exclude name="**/*.java"/>
+			</fileset>
+			<fileset dir="${basedir}/resources" >
+				<exclude name="**/*.java"/>
+			</fileset>
+		</copy>
+	</target>
+	<target name="jar" depends="compile" description="Create jar and MANIFEST.MF">
+		<!-- create a property containing all .jar files, prefix lib/, and seperated with a space -->
+		<pathconvert property="libs.project" pathsep=" ">
+			<mapper>
+				<chainedmapper>
+					<!-- remove absolute path -->
+					<flattenmapper />
+					<!-- add lib/ prefix -->
+					<globmapper from="*" to="lib/*" />
+				</chainedmapper>
+			</mapper>
+			<path>
+				<!-- lib.home contains all jar files, in several subdirectories -->
+				<fileset dir="${lib.home}">
+					<include name="*.jar" />
+				</fileset>
+			</path>
+		</pathconvert>
+		<!-- create the jar -->
+		<jar jarfile="${dist.home}/${jar.name}" basedir="${build.home}">
+			<!-- define MANIFEST.MF -->
+			<manifest>
+				<attribute name="Built-By" value="${user.name}" />
+				<attribute name="Main-Class" value="${mainclass}" />
+				<!-- finally, use the magically generated libs path -->
+				<attribute name="Class-Path" value="${libs.project}" />
+			</manifest>
+			<include name="**/*.class"/>
+			<include name="**/*.cfg.xml"/>
+			<!-- <include name="config.properties"/> -->
+			<!-- <include name="log4j.properties"/> -->
+		</jar>
+	</target>
+	
+	<target name="publish" depends="jar" >
+		<copy todir="${publishdir}/lib" >
+			<fileset dir="${lib.home}" >
+				<include name="*.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="${publishdir}/"  file="${dist.home}/${jar.name}"/>
+		<copy todir="${publishdir}/"  file="${src.home}/readMe.txt"/>
+		<mkdir dir="${publishdir}/resources/bussiness"/>
+		<copy todir="${publishdir}/resources/bussiness">
+			 <fileset dir="${build.home}/bussiness">
+		        <include name="**/*.xml"/>
+		     </fileset>
+		</copy>
+		<copy todir="${publishdir}/resources">
+			<fileset dir="${build.home}">
+				<include name="**/*.properties"/>
+			 </fileset>
+		</copy>
+		<copy todir="${publishdir}/lib"  file="${dist.home}/${jar.name}"/>
+	</target>
+</project>

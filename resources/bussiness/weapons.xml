@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<weapons>
+	<weapon id="1" name="方天画戟" rank="1" powerMin="15" powerMax="25" remark="攻击前需要休息一回合, 每级增加12点伤害" remote="false"  type="1" levelLimit="1" class="cn.uc.game.fight.pojo.weapon.Trident"/>
+	<weapon id="2" name="大榔头" rank="2" powerMin="12"  powerMax="16" remark="很顺手的爆头武器，不会被反击，每级增加8点伤害" remote="false"  type="1" levelLimit="1"  class="cn.uc.game.fight.pojo.weapon.Hammer"/>
+	<!-- <weapon id="3" name="棒球棒" rank="3" powerMin="15"  powerMax="25" remark="金属球棒，没有特效" remote="false"  type="1" levelLimit="10" artifact="false" class="cn.uc.game.fight.pojo.weapon.BaseballClub"/> -->
+	<weapon id="3" name="木剑" rank="4" powerMin="10"  powerMax="20" remark="增加闪避值，每级增加3%闪避和7点伤害" remote="false"  type="1" levelLimit="10" class="cn.uc.game.fight.pojo.weapon.WoodSword"/>
+    <weapon id="4" name="西瓜刀" rank="5" powerMin="9"  powerMax="17" remark="10%几率连击，每级增加2%链接和7点伤害" remote="false"  type="2" levelLimit="10" class="cn.uc.game.fight.pojo.weapon.WatermelonKnife"/>
+    <weapon id="5" name="死老鼠" rank="6" powerMin="8"  powerMax="12" remark="击中后降低对手10%敏捷，每级增加2%敏捷降低和4点伤害" remote="true"  type="2" levelLimit="10" class="cn.uc.game.fight.pojo.weapon.Mouse"/>
+	<weapon id="6" name="屎坨坨" rank="7" powerMin="7"  powerMax="11" remark="击中后降低对手速度10%，每级增加2%速度降低和4点伤害" remote="true"  type="1" levelLimit="1" class="cn.uc.game.fight.pojo.weapon.Shit"/>
+	<weapon id="7" name="橡皮擦" rank="8" powerMin="6"  powerMax="10" remark="忽略装死，每级增加10点伤害"  type="1" remote="true" levelLimit="1" class="cn.uc.game.fight.pojo.weapon.Eraser"/>
+	<weapon id="8" name="菜刀" rank="9" powerMin="9"  powerMax="11" remark="小平赠民族英雄的菜刀，降低对方10%力量，每级增加1%力量降低和3伤害"  type="2" remote="true" levelLimit="1" class="cn.uc.game.fight.pojo.weapon.Knife"/>
+	<!-- <weapon id="10" name="平底锅" rank="10" powerMin="5"  powerMax="15" remark="炒菜用的平底锅，没有特效" remote="true"  type="1" levelLimit="1" artifact="false" class="cn.uc.game.fight.pojo.weapon.Pan"/> -->
+	<weapon id="9" name="可口可乐" rank="11" powerMin="6"  powerMax="8" remark="大家都爱喝，必中，每级增加4点伤害" remote="true"  type="1" levelLimit="10" class="cn.uc.game.fight.pojo.weapon.Cole"/>
+
+	<weapon id="10" name="流星锤" rank="9" powerMin="7"  powerMax="11" remote="true" remark="对手闪避增加20% ，每级增加扔3次得几率2%和5点伤害"  type="1" levelLimit="20" class="cn.uc.game.fight.pojo.weapon.Liuxingcui"/>
+	<weapon id="11" name="激光剑" rank="9" powerMin="8"  powerMax="12" remote="false" remark="暴击几率增加20%，每级增加2%暴击和6点伤害"  type="1" levelLimit="20" class="cn.uc.game.fight.pojo.weapon.LaserSword"/>
+	<weapon id="12" name="狼牙棒" rank="11" powerMin="11"  powerMax="12" remote="false" remark="35%每回合下降4点生命，升级能提高4点持续伤害和5点基本伤害"  type="2" levelLimit="20" class="cn.uc.game.fight.pojo.weapon.Maul"/>
+	<weapon id="13" name="板砖" rank="12" powerMin="5"  powerMax="8" remote="true" remark="10%几率打晕对手一回合，每级提高3%打晕和3点伤害"  type="2" levelLimit="20" class="cn.uc.game.fight.pojo.weapon.Brick"/>
+	<!-- <weapon id="104" name="折凳" rank="13" powerMin="15"  powerMax="20" remote="false" remark="不能被反击，降低对手速度5%，升级提高降速效果。"  type="2" levelLimit="20" artifact="true" class="cn.uc.game.fight.pojo.weapon.Footrest"/> -->
+	<weapon id="14" name="忍者镖" rank="14" powerMin="6"  powerMax="8" remote="true" remark="吸血10%，每级提高4%吸血和3点伤害"  type="1" levelLimit="1" class="cn.uc.game.fight.pojo.weapon.Dart"/>
+	<!-- <weapon id="106" name="霸王枪" rank="15" powerMin="15"  powerMax="25" remote="false" remark="忽略装死，10%连击，升级提高连击几率。"  type="2" levelLimit="10" artifact="true" class="cn.uc.game.fight.pojo.weapon.Lance"/> -->
+    <weapon id="15" name="死神镰刀" rank="8" powerMin="12"  powerMax="16" remote="false" remark="死神来了，必中，每级提高7点伤害"  type="2" levelLimit="1" class="cn.uc.game.fight.pojo.weapon.Scythe"/>
+	<weapon id="16" name="沉默之斧" rank="8" powerMin="5"  powerMax="20" remote="false" remark="10%几率使对手下4个回合不能使用技能"  type="2" levelLimit="50" class="cn.uc.game.fight.pojo.weapon.SilentBlade"/>
+	<weapon id="17" name="双刃剑" rank="8" powerMin="20"  powerMax="40" remote="false" remark="消耗自身当前生命的10%（最多剩余1点）进行攻击。"  type="2" levelLimit="50" class="cn.uc.game.fight.pojo.weapon.DualBlades"/>
+</weapons>

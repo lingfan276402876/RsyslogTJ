@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--  
+id:编号
+name:名称
+class:实现类
+price:价格
+green:是否绿色道具
+autoUsed:是否自动使用
+-->
+<props>
+	<prop id="1" name="小体力药剂" class="cn.uc.game.fight.pojo.prop.SmallEnergy" price="3" green="true" autoUsed="false" buy="true"/>
+	<prop id="2" name="大体力药剂" class="cn.uc.game.fight.pojo.prop.BigEnergy" price="5" green="true" autoUsed="false" buy="true"/>
+	<prop id="3" name="大力丸" class="cn.uc.game.fight.pojo.prop.PowerPill" price="20" green="true" autoUsed="false" buy="true"/>
+	<prop id="4" name="敏捷丸" class="cn.uc.game.fight.pojo.prop.AgilityPill" price="20" green="true"  autoUsed="false" buy="true"/>
+	<prop id="5" name="速度丸" class="cn.uc.game.fight.pojo.prop.SpeedPill" price="20" green="true" autoUsed="false" buy="true"/>
+	<prop id="7" name="经验丸" class="cn.uc.game.fight.pojo.prop.ExpPill" price="20" green="true" autoUsed="false" buy="true"/>
+    <prop id="8" name="金松果" class="cn.uc.game.fight.pojo.prop.GoldPeanut" price="1" green="true" autoUsed="false" buy="false"/>
+	<prop id="10" name="力量转化丸" class="cn.uc.game.fight.pojo.prop.PowerConvertPill" price="240" green="false" autoUsed="false" buy="false"/>
+	<prop id="11" name="敏捷转化丸" class="cn.uc.game.fight.pojo.prop.AgilityConvertPill" price="240" green="false" autoUsed="false" buy="false"/>
+	<prop id="12" name="速度转化丸" class="cn.uc.game.fight.pojo.prop.SpeedConvertPill" price="240" green="false" autoUsed="false" buy="false"/>
+	<prop id="13" name="转生果" class="cn.uc.game.fight.pojo.prop.RebornPill" price="300" green="false" autoUsed="false" buy="true"/>
+	<prop id="14" name="生命转化丸" class="cn.uc.game.fight.pojo.prop.HpConvertPill" price="240" green="false" autoUsed="false" buy="false"/>
+	<prop id="15" name="经验" class="cn.uc.game.fight.pojo.prop.ExpAdd" price="1" green="false" autoUsed="true" buy="false"/>	
+	<prop id="16" name="力量永久+1" class="cn.uc.game.fight.pojo.prop.PowerBaseAdd" price="1" green="false" autoUsed="true" buy="false"/>
+	<prop id="17" name="敏捷永久+1" class="cn.uc.game.fight.pojo.prop.AgilityBaseAdd" price="1" green="false" autoUsed="true" buy="false"/>
+	<prop id="18" name="速度永久+1" class="cn.uc.game.fight.pojo.prop.SpeedBaseAdd" price="1" green="false" autoUsed="true" buy="false"/> 
+	<prop id="19" name="生命永久+1" class="cn.uc.game.fight.pojo.prop.HPBaseAdd" price="1" green="false" autoUsed="true" buy="false"/>
+	<prop id="21" name="技能书" class="cn.uc.game.fight.pojo.prop.SkillBook" price="20" green="false" autoUsed="false" buy="false"/>
+	<prop id="22" name="武器书" class="cn.uc.game.fight.pojo.prop.WeaponBook" price="20" green="false" autoUsed="false" buy="false"/>
+	<prop id="23" name="挑战书" class="cn.uc.game.fight.pojo.prop.ChallengeBook" price="20" green="false" autoUsed="false" buy="true"/>
+	<prop id="24" name="白色装备碎片" class="cn.uc.game.fight.pojo.prop.WhiteChip" price="1" green="false" autoUsed="false" buy="false"/>
+	<prop id="25" name="绿色装备碎片" class="cn.uc.game.fight.pojo.prop.GreenChip" price="1" green="false" autoUsed="false" buy="false"/>
+	<prop id="26" name="蓝色装备碎片" class="cn.uc.game.fight.pojo.prop.BlueChip" price="1" green="false" autoUsed="false" buy="false"/>
+	<prop id="27" name="空道具" class="cn.uc.game.fight.pojo.prop.NullProp" price="0" green="false" autoUsed="false" buy="false"/>
+	<prop id="28" name="一级礼包" class="cn.uc.game.fight.pojo.prop.GiftProp" price="0" green="false" autoUsed="false" buy="false"/>
+	<prop id="29" name="五级礼包" class="cn.uc.game.fight.pojo.prop.GiftProp" price="0" green="false" autoUsed="false" buy="false"/>
+	<prop id="30" name="十级礼包" class="cn.uc.game.fight.pojo.prop.GiftProp" price="0" green="false" autoUsed="false" buy="false"/>
+	<prop id="31" name="十五级礼包" class="cn.uc.game.fight.pojo.prop.GiftProp" price="0" green="false" autoUsed="false" buy="false"/>
+	<prop id="32" name="二十级礼包" class="cn.uc.game.fight.pojo.prop.GiftProp" price="0" green="false" autoUsed="false" buy="false"/>
+	<prop id="33" name="高级技能书" class="cn.uc.game.fight.pojo.prop.AdvancedSkillBook" price="20" green="false" autoUsed="false" buy="false"/>
+	<prop id="34" name="高级武器书" class="cn.uc.game.fight.pojo.prop.AdvancedWeaponBook" price="20" green="false" autoUsed="false" buy="false"/>
+	<prop id="35" name="符石袋" class="cn.uc.game.fight.pojo.prop.GemBag" price="0" green="false" autoUsed="false" buy="false"/>
+	<prop id="36" name="英雄帖" class="cn.uc.game.fight.pojo.prop.RodeoBook" price="10" green="false" autoUsed="false" buy="true"/>
+	<prop id="37" name="属性书" class="cn.uc.game.fight.pojo.prop.PropertyBook" price="1000" green="false" autoUsed="false" buy="false"/>
+	<prop id="38" name="红包" class="cn.uc.game.fight.pojo.prop.RedEnvelop" price="1000" green="false" autoUsed="false" buy="false"/>
+	<prop id="39" name="勇气徽章" class="cn.uc.game.fight.pojo.prop.CourageBadge" price="10" green="false" autoUsed="false" buy="true"/>
+	
+	<prop id="40" name="金杯" class="cn.uc.game.fight.pojo.prop.GoldenCup" price="0" green="false" autoUsed="false" buy="false"/>
+	<prop id="41" name="超级大力丸" class="cn.uc.game.fight.pojo.prop.SuperPowerPill" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="42" name="超级敏捷丸" class="cn.uc.game.fight.pojo.prop.SuperAgilityPill" price="20" green="true"  autoUsed="false" buy="false"/>
+	<prop id="43" name="超级速度丸" class="cn.uc.game.fight.pojo.prop.SuperSpeedPill" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="44" name="超级经验丸" class="cn.uc.game.fight.pojo.prop.SuperExpPill" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="45" name="天使果实种子" class="cn.uc.game.fight.pojo.prop.AngelChip" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="46" name="恶魔果实种子" class="cn.uc.game.fight.pojo.prop.DevilChip" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="47" name="天使果实" class="cn.uc.game.fight.pojo.prop.AngelFruit" price="200" green="true" autoUsed="false" buy="true"/>
+	<prop id="48" name="恶魔果实" class="cn.uc.game.fight.pojo.prop.DevilFruit" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="49" name="巧克力" class="cn.uc.game.fight.pojo.prop.Chocolate" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="50" name="金宝箱" class="cn.uc.game.fight.pojo.prop.TreasureChest" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="51" name="红色彩蛋" class="cn.uc.game.fight.pojo.prop.MulticolourEgg" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="52" name="橙色彩蛋" class="cn.uc.game.fight.pojo.prop.MulticolourEgg" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="53" name="黄色彩蛋" class="cn.uc.game.fight.pojo.prop.MulticolourEgg" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="54" name="绿色彩蛋" class="cn.uc.game.fight.pojo.prop.MulticolourEgg" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="55" name="青色彩蛋" class="cn.uc.game.fight.pojo.prop.MulticolourEgg" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="56" name="蓝色彩蛋" class="cn.uc.game.fight.pojo.prop.MulticolourEgg" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="57" name="紫色彩蛋" class="cn.uc.game.fight.pojo.prop.MulticolourEgg" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="58" name="免费抽奖" class="cn.uc.game.fight.pojo.prop.FreeLottery" price="1000" green="true" autoUsed="true" buy="false"/>
+	
+	<prop id="59" name="红色礼袜" class="cn.uc.game.fight.pojo.prop.Socks" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="60" name="橙色礼袜" class="cn.uc.game.fight.pojo.prop.Socks" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="61" name="黄色礼袜" class="cn.uc.game.fight.pojo.prop.Socks" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="62" name="绿色礼袜" class="cn.uc.game.fight.pojo.prop.Socks" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="63" name="青色礼袜" class="cn.uc.game.fight.pojo.prop.Socks" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="64" name="蓝色礼袜" class="cn.uc.game.fight.pojo.prop.Socks" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="65" name="紫色礼袜" class="cn.uc.game.fight.pojo.prop.Socks" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="66" name="属性碎片" class="cn.uc.game.fight.pojo.prop.AttributeChip" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="67" name="金钥匙" class="cn.uc.game.fight.pojo.prop.ChestChip" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="68" name="肥料" class="cn.uc.game.fight.pojo.prop.Manure" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="69" name="爆竹" class="cn.uc.game.fight.pojo.prop.NewYearGift" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="70" name="元宵" class="cn.uc.game.fight.pojo.prop.NewYearGift" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="71" name="春联" class="cn.uc.game.fight.pojo.prop.NewYearGift" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="72" name="灯笼" class="cn.uc.game.fight.pojo.prop.NewYearGift" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="73" name="福袋" class="cn.uc.game.fight.pojo.prop.NewYearGift" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="74" name="饺子" class="cn.uc.game.fight.pojo.prop.NewYearGift" price="20" green="true" autoUsed="false" buy="false"/>
+	<!-- 101-120分配给宝石 -->
+	<prop id="101" name="一级宝石" class="cn.uc.game.fight.pojo.prop.Gem" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="102" name="二级宝石" class="cn.uc.game.fight.pojo.prop.Gem" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="103" name="三级宝石" class="cn.uc.game.fight.pojo.prop.Gem" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="104" name="四级宝石" class="cn.uc.game.fight.pojo.prop.Gem" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="105" name="五级宝石" class="cn.uc.game.fight.pojo.prop.Gem" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="106" name="六级宝石" class="cn.uc.game.fight.pojo.prop.Gem" price="20" green="true" autoUsed="false" buy="false"/>
+	<prop id="107" name="七级宝石" class="cn.uc.game.fight.pojo.prop.Gem" price="20" green="true" autoUsed="false" buy="false"/>
+</props>

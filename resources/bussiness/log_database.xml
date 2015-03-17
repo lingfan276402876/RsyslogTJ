@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logs>
+  <!-- 登陆日志 -->
+  <log type="LoginLog" table="LoginLog_log" sqlExcute="insert into" className="cn.uc.rsyslog.service.impl.BaseService">
+     <filed name="pt" dataType="datetime" index="0" comment="时间"/>
+     <filed name="channel" dataType="char_" index="1" comment="渠道"/>
+     <filed name="uid" dataType="char_" index="2" comment="账号"/>
+     <filed name="playerId" dataType="long_" index="3"  comment="角色id"/>
+     <filed name="name" dataType="char_" index="4" comment="角色名称"/>
+     <filed name="roleName" dataType="string" index="5" comment="职业"/>
+     <filed name="level" dataType="int_" index="6" comment="等级"/>
+     <filed name="ip" dataType="string" index="7" comment="登陆地址"/>
+     <filed name="energy" dataType="int_" index="8" comment="体力"/>
+     <filed name="coin" dataType="int_" index="9" comment="金币"/>
+     <filed name="money" dataType="int_" index="10" comment="元宝"/>
+     <filed name="bindMoney" dataType="int_" index="11" comment="绑定元宝"/>
+     <filed name="serverId" dataType="int_" index="12" comment="频道ID"/>
+     <indexs>
+        <index name="channel_uid_pt" columns="channel,uid,pt"/>
+        <index name="channel_name_pt" columns="channel,name,pt"/>
+        <index name="channel_ip_pt" columns="channel,ip,pt"/>
+        <index name="channel_name_ip_pt" columns="channel,name,ip,pt"/>
+     </indexs>
+  </log>
+  <!-- 充值日志 -->
+  <log type="RechargeLog" table="RechargeLog_log" sqlExcute="insert into" className="cn.uc.rsyslog.service.impl.BaseService">
+     <filed name="pt" dataType="datetime" index="0" comment="时间"/>
+     <filed name="channel" dataType="char_" index="1" comment="渠道"/>
+     <filed name="uid" dataType="char_" index="2" comment="账号"/>
+     <filed name="playerId" dataType="long_" index="3" comment="角色id"/>
+     <filed name="name" dataType="char_" index="4" comment="角色名称"/>
+     <filed name="money" dataType="number" index="6" comment="充值金额"/>
+     <filed name="thingName" dataType="string" index="7" comment="商品名称"/>
+	 <filed name="orderId" dataType="string" index="8" comment="订单号"/>
+	 <filed name="status" dataType="string" index="9" comment="充值状态"/>
+	 <indexs>
+        <index name="channel_uid_pt" columns="channel,uid,pt"/>
+        <index name="channel_name_pt" columns="channel,name,pt"/>
+     </indexs>
+  </log>
+  <!-- 礼包领取日志 -->
+   <log type="GiftCodeLog" table="GiftCodeLog_log" sqlExcute="insert into" className="cn.uc.rsyslog.service.impl.BaseService">
+     <filed name="pt" dataType="datetime" index="0" comment="时间"/>
+     <filed name="channel" dataType="char_" index="1" comment="渠道"/>
+     <filed name="uid" dataType="char_" index="2" comment="账号"/>
+     <filed name="playerId" dataType="long_" index="3" comment="角色id"/>
+     <filed name="name" dataType="char_" index="4" comment="角色名称"/>
+     <filed name="actNo" dataType="string" index="6" comment="礼包编号"/>
+     <filed name="actName" dataType="string" index="7" comment="礼包名称"/>
+	 <filed name="giftcode" dataType="string" index="8" comment="礼包兑换码"/>
+	 <filed name="status" dataType="string" index="9" comment="状态"/>
+	 <indexs>
+        <index name="channel_uid_pt" columns="channel,uid,pt"/>
+        <index name="channel_name_pt" columns="channel,name,pt"/>
+     </indexs>
+  </log>
+    <!-- 称号获取日志 -->
+  <log type="GainTitleLog" table="GainTitleLog_log" sqlExcute="insert into" className="cn.uc.rsyslog.service.impl.BaseService">
+     <filed name="pt" dataType="datetime" index="0" comment="时间"/>
+     <filed name="channel" dataType="char_" index="1" comment="渠道"/>
+     <filed name="uid" dataType="char_" index="2" comment="账号"/>
+     <filed name="playerId" dataType="long_" index="3"  comment="角色id"/>
+     <filed name="name" dataType="char_" index="4" comment="角色名称"/>
+     <filed name="level" dataType="int_" index="6" comment="等级"/>
+     <filed name="titleId" dataType="string" index="7" comment="称号ID"/>
+     <filed name="titleName" dataType="string" index="8" comment="称号名称"/>
+      <indexs>
+        <index name="channel_uid_pt" columns="channel,uid,pt"/>
+        <index name="channel_name_pt" columns="channel,name,pt"/>
+     </indexs>
+  </log>
+      <!-- 装备鉴定日志 -->
+  <log type="DeSealEquipLog" table="DeSealEquipLog_log" sqlExcute="insert into" className="cn.uc.rsyslog.service.impl.BaseService">
+     <filed name="pt" dataType="datetime" index="0" comment="时间"/>
+     <filed name="channel" dataType="char_" index="1" comment="渠道"/>
+     <filed name="uid" dataType="char_" index="2" comment="账号"/>
+     <filed name="playerId" dataType="long_" index="3"  comment="角色id"/>
+     <filed name="name" dataType="char_" index="4" comment="角色名称"/>
+     <filed name="equipmentId" dataType="string" index="6" comment="装备ID"/>
+     <filed name="equipmentName" dataType="string" index="7" comment="装备名称"/>
+     <filed name="attr" dataType="string" index="8" comment="鉴定属性"/>
+      <indexs>
+        <index name="channel_uid_pt" columns="channel,uid,pt"/>
+        <index name="channel_name_pt" columns="channel,name,pt"/>
+     </indexs>
+  </log>
+  
+  <!-- 装备合成日志 -->
+  <log type="ComposeEquipLog" table="ComposeEquipLog_log" sqlExcute="insert into" className="cn.uc.rsyslog.service.impl.BaseService">
+     <filed name="pt" dataType="datetime" index="0" comment="时间"/>
+     <filed name="channel" dataType="char_" index="1" comment="渠道"/>
+     <filed name="uid" dataType="char_" index="2" comment="账号"/>
+     <filed name="playerId" dataType="long_" index="3"  comment="角色id"/>
+     <filed name="name" dataType="char_" index="4" comment="角色名称"/>
+     <filed name="sourceEquip1" dataType="string" index="6" comment="源装备1"/>
+     <filed name="sourceEquip2" dataType="string" index="7" comment="源装备2"/>
+     <filed name="resultEquip" dataType="string" index="8" comment="新装备"/>
+     <indexs>
+        <index name="channel_uid_pt" columns="channel,uid,pt"/>
+        <index name="channel_name_pt" columns="channel,name,pt"/>
+     </indexs>
+  </log>
+    <!-- 装备洗炼日志 -->
+  <log type="BaptizeEquipLog" table="BaptizeEquipLog_log" sqlExcute="insert into" className="cn.uc.rsyslog.service.impl.BaseService">
+     <filed name="pt" dataType="datetime" index="0" comment="时间"/>
+     <filed name="channel" dataType="char_" index="1" comment="渠道"/>
+     <filed name="uid" dataType="char_" index="2" comment="账号"/>
+     <filed name="playerId" dataType="long_" index="3"  comment="角色id"/>
+     <filed name="name" dataType="char_" index="4" comment="角色名称"/>
+     <filed name="equipmentId" dataType="string" index="6" comment="装备ID"/>
+     <filed name="equipmentName" dataType="string" index="7" comment="装备名称"/>
+     <filed name="sourceEquipAttr" dataType="string" index="8" comment="洗炼前属性"/>
+     <filed name="resultEquipAttr" dataType="string" index="9" comment="洗炼后属性"/>
+     <indexs>
+        <index name="channel_uid_pt" columns="channel,uid,pt"/>
+        <index name="channel_name_pt" columns="channel,name,pt"/>
+     </indexs>
+  </log>
+      <!-- 装备分解日志 -->
+  <log type="DecompEquipLog" table="DecompEquipLog_log" sqlExcute="insert into" className="cn.uc.rsyslog.service.impl.BaseService">
+     <filed name="pt" dataType="datetime" index="0" comment="时间"/>
+     <filed name="channel" dataType="char_" index="1" comment="渠道"/>
+     <filed name="uid" dataType="char_" index="2" comment="账号"/>
+     <filed name="playerId" dataType="long_" index="3"  comment="角色id"/>
+     <filed name="name" dataType="char_" index="4" comment="角色名称"/>
+     <filed name="equipmentId" dataType="string" index="6" comment="装备ID"/>
+     <filed name="equipmentName" dataType="string" index="7" comment="装备名称"/>
+     <filed name="DecompResult" dataType="string" index="8" comment="分解结果"/>
+     <indexs>
+        <index name="channel_uid_pt" columns="channel,uid,pt"/>
+        <index name="channel_name_pt" columns="channel,name,pt"/>
+     </indexs>
+  </log>
+  <!-- 装备强化日志 -->
+  <log type="StrenEquipLog" table="StrenEquipLog_log" sqlExcute="insert into" className="cn.uc.rsyslog.service.impl.BaseService">
+     <filed name="pt" dataType="datetime" index="0" comment="时间"/>
+     <filed name="channel" dataType="char_" index="1" comment="渠道"/>
+     <filed name="uid" dataType="char_" index="2" comment="账号"/>
+     <filed name="playerId" dataType="long_" index="3"  comment="角色id"/>
+     <filed name="name" dataType="char_" index="4" comment="角色名称"/>
+     <filed name="equipmentId" dataType="string" index="6" comment="装备ID"/>
+     <filed name="equipmentName" dataType="string" index="7" comment="装备名称"/>
+     <filed name="strenResult" dataType="string" index="8" comment="强化结果"/>
+      <filed name="type" dataType="string" index="9" comment="操作类型"/>
+     <filed name="strenDesc" dataType="string" index="10" comment="强化结果详情"/>
+     <indexs>
+        <index name="channel_uid_pt" columns="channel,uid,pt"/>
+        <index name="channel_name_pt" columns="channel,name,pt"/>
+     </indexs>
+  </log>
+    <!-- 货币产出消耗日志 -->
+  <log type="CurrencyChangeLog" table="CurrencyChangeLog_log" sqlExcute="insert into" className="cn.uc.rsyslog.service.impl.BaseService">
+     <filed name="pt" dataType="datetime" index="0" comment="时间"/>
+     <filed name="channel" dataType="char_" index="1" comment="渠道"/>
+     <filed name="uid" dataType="char_" index="2" comment="账号"/>
+     <filed name="playerId" dataType="long_" index="3"  comment="角色id"/>
+     <filed name="name" dataType="char_" index="4" comment="角色名称"/>
+     <filed name="level" dataType="int_" index="6" comment="等级"/>
+     <filed name="currencyType" dataType="string" index="7" comment="货币类型"/>
+     <filed name="status" dataType="string" index="8" comment="状态"/>
+     <filed name="source" dataType="string" index="9" comment="途径"/>
+     <filed name="changeValue" dataType="long_" index="10" comment="货币数量"/>
+     <filed name="newValue" dataType="string" index="11" comment="操作后货币数量"/>
+     <indexs>
+        <index name="channel_uid_pt" columns="channel,uid,pt"/>
+        <index name="channel_name_pt" columns="channel,name,pt"/>
+        <index name="channel_currencyType_pt" columns="channel,currencyType,pt"/>
+        <index name="channel_status_pt" columns="channel,status,pt"/>
+        <index name="channel_uid_currencyType_pt" columns="channel,uid,currencyType,pt"/>
+        <index name="channel_name_status_pt" columns="channel,name,status,pt"/>
+     </indexs>
+  </log> 
+  
+  <!-- 邮件日志 -->
+  <log type="MailLog" table="MailLog_log" sqlExcute="insert into" className="cn.uc.rsyslog.service.impl.BaseService">
+     <filed name="pt" dataType="datetime" index="0" comment="时间"/>
+     <filed name="operaType" dataType="char_" index="6" comment="操作类型"/>
+     <filed name="mailId" dataType="long_"  index="7" comment="邮件ID"/>
+     <filed name="senderId" dataType="long_" index="8" comment="发送人ID"/>
+     <filed name="senderName" dataType="char_" index="9"  comment="发送人名称"/>
+     <filed name="receiverId" dataType="long_" index="10" comment="收件人ID"/>
+     <filed name="receiverName" dataType="char_" index="11" comment="收件人名称"/>
+     <filed name="title" dataType="string" index="12" comment="邮件标题"/>
+     <filed name="content" dataType="string" index="13" comment="邮件内容"/>
+     <filed name="attachement" dataType="string" index="14" comment="附件"/>
+     <filed name="isok" dataType="int_" index="15" comment="状态"/>
+     <indexs>
+        <index name="mailId" columns="mailId,pt"/>
+        <index name="senderId_pt" columns="senderId,pt"/>
+        <index name="senderName_pt" columns="senderName,pt"/>
+        <index name="receiverId_pt" columns="receiverId,pt"/>
+        <index name="receiverName_pt" columns="receiverName,pt"/>
+        <index name="senderName_receiverName_pt" columns="senderName,receiverName,pt"/>
+     </indexs>
+  </log> 
+  
+   <!-- 拍卖行日志 -->
+  <log type="AuctionLog" table="AuctionLog_log" sqlExcute="insert into" className="cn.uc.rsyslog.service.impl.BaseService">
+     <filed name="pt" dataType="datetime" index="0" comment="时间"/>
+     <filed name="channel" dataType="char_" index="1" comment="渠道"/>
+     <filed name="uid" dataType="char_" index="2" comment="账号"/>
+     <filed name="playerId" dataType="long_" index="3"  comment="寄售人角色ID"/>
+     <filed name="name" dataType="char_" index="4" comment="寄售人角色名称"/>
+     <filed name="type" dataType="string" index="6" comment="操作类型"/>
+     <filed name="auctionerId" dataType="long_" index="7" comment="拍卖人ID"/>
+     <filed name="auctionerName" dataType="char_" index="8" comment="拍卖人名称"/>
+     <filed name="thingId" dataType="char_" index="9" comment="商品ID"/>
+     <filed name="thingName" dataType="char_" index="10" comment="商品名称"/>
+     <filed name="count" dataType="long_" index="11" comment="数量"/>
+     <filed name="price" dataType="long_" index="12" comment="物品单价"/>
+     <filed name="auctionDealine" dataType="char_" index="13" comment="拍卖期限"/>
+     <filed name="opMailId" dataType="long_" index="14" comment="操作人邮件ID"/>
+     <filed name="auctionDMailId" dataType="long_" index="15" comment="拍卖人邮件ID"/>
+     <indexs>
+        <index name="channel_uid_pt" columns="channel,uid,pt"/>
+        <index name="channel_name_pt" columns="channel,name,pt"/>
+        <index name="channel_auctionerName_pt" columns="channel,auctionerName,pt"/>
+        <index name="channel_thingName_pt" columns="channel,thingName,pt"/>
+        <index name="channel_uid_auctionerName_pt" columns="channel,uid,auctionerName,pt"/>
+        <index name="channel_name_auctionerName_pt" columns="channel,name,auctionerName,pt"/>
+        <index name="channel_uid_thingName_pt" columns="channel,uid,thingName,pt"/>
+        <index name="channel_name_thingName_pt" columns="channel,name,thingName,pt"/>
+     </indexs>
+  </log> 
+  
+    <!-- 物件产出日志 -->
+  <log type="ThingOutputLog" table="ThingOutputLog_log"  comment="物件产出日志 " sqlExcute="insert into" className="cn.uc.rsyslog.service.impl.BaseService">
+     <filed name="pt" dataType="datetime" index="0" comment="时间"/>
+     <filed name="channel" dataType="char_" index="1" comment="渠道"/>
+     <filed name="uid" dataType="char_" index="2" comment="账号"/>
+     <filed name="playerId" dataType="long_" index="3"  comment="角色id"/>
+     <filed name="name" dataType="char_" index="4" comment="角色名称"/>
+     <filed name="level" dataType="int_" index="6" comment="等级"/>
+     <filed name="thingOutputType"  dataType="char_" index="7" comment="产出类型"/>
+     <filed name="thingId" dataType="string" index="8"  comment="物件ID"/>
+     <filed name="thingName" dataType="char_" index="9"  comment="物件名称"/>
+     <filed name="thingCount" dataType="long_" index="10" comment="产出数量"/>
+     <filed name="currentCount" dataType="int_" index="11" comment="当前数量"/>
+     <filed name="remark" dataType="string" index="12"  comment="备注"/>
+     <indexs>
+        <index name="channel_uid_pt" columns="channel,uid,pt"/>
+        <index name="channel_name_pt" columns="channel,name,pt"/>
+        <index name="channel_thingOutputType_pt" columns="channel,thingOutputType,pt"/>
+        <index name="channel_thingName_pt" columns="channel,thingName,pt"/>
+        <index name="channel_uid_thingOutputType_pt" columns="channel,uid,thingOutputType,pt"/>
+        <index name="channel_name_thingName_pt" columns="channel,name,thingName,pt"/>
+        <index name="channel_name_thingOutputType_pt" columns="channel,name,thingOutputType,pt"/>
+        <index name="channel_uid_thingName_pt" columns="channel,uid,thingName,pt"/>
+     </indexs>
+  </log> 
+  
+  <!-- 物件使用日志 -->
+  <log type="ThingUseLog" table="ThingUseLog_log"  comment="物件使用日志 " sqlExcute="insert into" className="cn.uc.rsyslog.service.impl.BaseService">
+     <filed name="pt" dataType="datetime" index="0" comment="时间"/>
+     <filed name="channel" dataType="char_" index="1" comment="渠道"/>
+     <filed name="uid" dataType="char_" index="2" comment="账号"/>
+     <filed name="playerId" dataType="long_" index="3"  comment="角色id"/>
+     <filed name="name" dataType="char_" index="4" comment="角色名称"/>
+     <filed name="level" dataType="int_" index="6" comment="等级"/>
+     <filed name="thingUseType"  dataType="char_" index="7" comment="使用类型"/>
+     <filed name="thingId" dataType="string" index="8"  comment="物件ID"/>
+     <filed name="thingName" dataType="char_" index="9"  comment="物件名称"/>
+     <filed name="thingCount" dataType="long_" index="10" comment="使用数量"/>
+     <filed name="leftCount" dataType="long_" index="11" comment="剩余数量"/>
+     <filed name="remark" dataType="string" index="12"  comment="备注"/>
+      <indexs>
+        <index name="channel_uid_pt" columns="channel,uid,pt"/>
+        <index name="channel_name_pt" columns="channel,name,pt"/>
+        <index name="channel_thingUseType_pt" columns="channel,thingUseType,pt"/>
+        <index name="channel_thingName_pt" columns="channel,thingName,pt"/>
+        <index name="channel_uid_thingUseType_pt" columns="channel,uid,thingUseType,pt"/>
+        <index name="channel_name_thingName_pt" columns="channel,name,thingName,pt"/>
+        <index name="channel_name_thingUseType_pt" columns="channel,name,thingUseType,pt"/>
+        <index name="channel_uid_thingName_pt" columns="channel,uid,thingName,pt"/>
+     </indexs>
+  </log> 
+    <!-- 帮会排行榜日志 -->
+  <log type="GangRankListLog" table="GangRankListLog_log"  comment="帮会排行榜日志 " sqlExcute="insert into" className="cn.uc.rsyslog.service.impl.BaseService">
+     <filed name="pt" dataType="datetime" index="0" comment="时间"/>
+     <filed name="channel" dataType="char_" index="1" comment="渠道"/>
+     <filed name="uid" dataType="char_" index="2" comment="帮主账号"/>
+     <filed name="name" dataType="char_" index="4" comment="角色名称"/>
+     <filed name="rank"  dataType="int_" index="6" comment="排名"/>
+     <filed name="gangName" dataType="string" index="7"  comment="帮会名称"/>
+     <filed name="level" dataType="int_" index="8"  comment="帮会等级"/>
+     <filed name="exp" dataType="int_" index="9" comment="帮会经验"/>
+     <filed name="treeLevel" dataType="int_" index="10" comment="摇钱树等级"/>
+     <indexs>
+        <index name="channel_uid_pt" columns="channel,uid,pt"/>
+        <index name="channel_name_pt" columns="channel,name,pt"/>
+        <index name="channel_gangName_pt" columns="channel,gangName,pt"/>
+     </indexs>
+  </log> 
+  
+   <!-- 决斗日志 -->
+  <log type="DuelLog" table="DuelLog_log" sqlExcute="insert into" className="cn.uc.rsyslog.service.impl.BaseService">
+     <filed name="pt" dataType="datetime" index="0" comment="时间"/>
+     <filed name="channel" dataType="char_" index="1" comment="渠道"/>
+     <filed name="uid" dataType="char_" index="2" comment="账号"/>
+     <filed name="name" dataType="char_" index="4" comment="角色名称"/>
+     <filed name="roleName" dataType="char_" index="5" comment="职业名称"/>
+     <filed name="powerChangeDesc" dataType="string" index="6" comment="战力变化"/>
+     <filed name="expChangeDesc" dataType="string" index="7" comment="决斗经验变化"/>
+     <filed name="gradeChangeDesc" dataType="string" index="8" comment="段位等级变化"/>
+     <filed name="starChangeDesc" dataType="string" index="9" comment="星级变化"/>
+     <filed name="result" dataType="char_" index="10" comment="决斗结果"/>
+      <indexs>
+        <index name="channel_uid_pt" columns="channel,uid,pt"/>
+        <index name="channel_name_pt" columns="channel,name,pt"/>
+     </indexs>
+  </log>
+   <!-- 离开日志 -->
+  <log type="LoginoutLog" table="LoginoutLog_log" sqlExcute="insert into" className="cn.uc.rsyslog.service.impl.BaseService">
+     <filed name="pt" dataType="datetime" index="0" comment="时间"/>
+     <filed name="channel" dataType="char_" index="1" comment="渠道"/>
+     <filed name="uid" dataType="char_" index="2" comment="账号"/>
+     <filed name="playerId" dataType="long_" index="3"  comment="角色id"/>
+     <filed name="name" dataType="char_" index="4" comment="角色名称"/>
+     <filed name="roleName" dataType="string" index="5" comment="职业"/>
+     <filed name="level" dataType="int_" index="6" comment="等级"/>
+     <filed name="energy" dataType="int_" index="8" comment="体力"/>
+     <filed name="coin" dataType="int_" index="9" comment="金币"/>
+     <filed name="money" dataType="int_" index="10" comment="元宝"/>
+     <filed name="bindMoney" dataType="int_" index="11" comment="绑定元宝"/>
+     <filed name="serverId" dataType="int_" index="12" comment="频道ID"/>
+     <indexs>
+        <index name="channel_uid_pt" columns="channel,uid,pt"/>
+        <index name="channel_name_pt" columns="channel,name,pt"/>
+     </indexs>
+  </log>
+    <!--完美点获取日志 -->
+  <log type="PerfectPointLog" table="PerfectPointLog_log" sqlExcute="insert into" className="cn.uc.rsyslog.service.impl.BaseService">
+     <filed name="pt" dataType="datetime" index="0" comment="时间"/>
+     <filed name="channel" dataType="char_" index="1" comment="渠道"/>
+     <filed name="uid" dataType="char_" index="2" comment="账号"/>
+     <filed name="playerId" dataType="long_" index="3"  comment="角色id"/>
+     <filed name="name" dataType="char_" index="4" comment="角色名称"/>
+     <filed name="roleName" dataType="string" index="5" comment="职业"/>
+     <filed name="level" dataType="int_" index="6" comment="等级"/>
+     <filed name="perectPoint" dataType="int_" index="7" comment="完美点"/>
+     <filed name="mazeName" dataType="string" index="8" comment="地图名称"/>
+  </log>
+    <!--完美点兑换日志 -->
+  <log type="PerfectRewardLog" table="PerfectRewardLog_log" sqlExcute="insert into" className="cn.uc.rsyslog.service.impl.BaseService">
+     <filed name="pt" dataType="datetime" index="0" comment="时间"/>
+     <filed name="channel" dataType="char_" index="1" comment="渠道"/>
+     <filed name="uid" dataType="char_" index="2" comment="账号"/>
+     <filed name="playerId" dataType="long_" index="3"  comment="角色id"/>
+     <filed name="name" dataType="char_" index="4" comment="角色名称"/>
+     <filed name="roleName" dataType="string" index="5" comment="职业"/>
+     <filed name="level" dataType="int_" index="6" comment="等级"/>
+     <filed name="mazeName" dataType="string" index="7" comment="地图名称"/>
+     <filed name="rewardNo" dataType="char_" index="8" comment="奖励编号"/>
+     <indexs>
+        <index name="channel_uid_pt" columns="channel,uid,pt"/>
+        <index name="channel_name_pt" columns="channel,name,pt"/>
+     </indexs>
+  </log>
+  <!-- 活动礼包领取 -->
+  <log type="activityRewardLog" table="activityRewardLog_log"  comment="活动礼包领取 " sqlExcute="insert into" className="cn.uc.rsyslog.service.impl.BaseService">
+     <filed name="pt" dataType="datetime" index="0" comment="时间"/>
+     <filed name="channel" dataType="char_" index="1" comment="渠道"/>
+     <filed name="uid" dataType="char_" index="2" comment="账号"/>
+     <filed name="playerId" dataType="long_" index="3"  comment="角色id"/>
+     <filed name="name" dataType="char_" index="4" comment="角色名称"/>
+     <filed name="roleName" dataType="char_" index="5" comment="职业名称"/>
+     <filed name="level" dataType="int_" index="6" comment="等级"/>
+     <filed name="activityName"  dataType="string" index="7" comment="活动名称"/>
+     <filed name="rewardNo" dataType="char_" index="8"  comment="奖励编号"/>
+     <indexs>
+        <index name="channel_uid_pt" columns="channel,uid,pt"/>
+        <index name="channel_name_pt" columns="channel,name,pt"/>
+     </indexs>
+  </log> 
+   <!-- 体力日志 -->
+  <log type="energyChangeLog" table="energyChangeLog_log"  comment="体力变化日志" sqlExcute="insert into" className="cn.uc.rsyslog.service.impl.BaseService">
+     <filed name="pt" dataType="datetime" index="0" comment="时间"/>
+     <filed name="channel" dataType="char_" index="1" comment="渠道"/>
+     <filed name="uid" dataType="char_" index="2" comment="账号"/>
+     <filed name="playerId" dataType="long_" index="3"  comment="角色id"/>
+     <filed name="name" dataType="char_" index="4" comment="角色名称"/>
+     <filed name="change"  dataType="int_" index="6" comment="体力变化值"/>
+     <filed name="energy" dataType="int_" index="7"  comment="操作后体力值"/>
+     <filed name="operateType" dataType="char_" index="8"  comment="操作类型"/>
+     <filed name="mazeId" dataType="int_" index="9"  comment="mazeId"/>
+     <filed name="mapId" dataType="int_" index="10"  comment="mapId"/>
+     <indexs>
+        <index name="channel_uid_pt" columns="channel,uid,pt"/>
+        <index name="channel_name_pt" columns="channel,name,pt"/>
+        <index name="channel_uid_operateType_pt" columns="channel,uid,operateType,pt"/>
+        <index name="channel_name_operateType_pt" columns="channel,name,operateType,pt"/>
+        <index name="channel_operateType_pt" columns="channel,operateType,pt"/>
+     </indexs>
+  </log> 
+ <!-- 任务日志 -->
+  <log type="taskStatusLog" table="taskStatusLog_log"  comment="任务日志" sqlExcute="insert into" className="cn.uc.rsyslog.service.impl.BaseService">
+     <filed name="pt" dataType="datetime" index="0" comment="时间"/>
+     <filed name="channel" dataType="char_" index="1" comment="渠道"/>
+     <filed name="uid" dataType="char_" index="2" comment="账号"/>
+     <filed name="playerId" dataType="long_" index="3"  comment="角色id"/>
+     <filed name="name" dataType="char_" index="4" comment="角色名称"/>
+     <filed name="taskId"  dataType="int_" index="6" comment="任务ID"/>
+     <filed name="oldStatus"  dataType="int_" index="7" comment="任务原状态"/>
+     <filed name="newStatus" dataType="int_" index="8"  comment="任务新状态"/>
+     <indexs>
+        <index name="channel_uid_pt" columns="channel,uid,pt"/>
+        <index name="channel_name_pt" columns="channel,name,pt"/>
+        <index name="channel_taskId_pt" columns="channel,taskId,pt"/>
+        <index name="channel_uid_taskId_pt" columns="channel,uid,taskId,pt"/>
+        <index name="channel_name_taskId_pt" columns="channel,name,taskId,pt"/>
+     </indexs>
+  </log> 
+   <!-- 宠物日志 -->
+  <log type="petOprationLog" table="petOprationLog_log"  comment="宠物日志" sqlExcute="insert into" className="cn.uc.rsyslog.service.impl.BaseService">
+     <filed name="pt" dataType="datetime" index="0" comment="时间"/>
+     <filed name="channel" dataType="char_" index="1" comment="渠道"/>
+     <filed name="uid" dataType="char_" index="2" comment="账号"/>
+     <filed name="playerId" dataType="long_" index="3"  comment="角色id"/>
+     <filed name="name" dataType="char_" index="4" comment="角色名称"/>
+     <filed name="petId"  dataType="int_" index="6" comment="宠物ID"/>
+     <filed name="petName"  dataType="char_" index="7" comment="宠物名"/>
+     <filed name="levelUpBeforePetBeat"  dataType="char_" index="8" comment="升级前宠物元魂珠数量"/>
+     <filed name="levelUpAfterPetBeat"  dataType="char_" index="9" comment="升级后宠物元魂珠数量"/>
+     <filed name="levelUpBeforeSpirit"  dataType="char_" index="10" comment="升级前宠物之灵数量"/>
+     <filed name="levelUpAfterSpirit"  dataType="char_" index="11" comment="升级后宠物之灵数量"/>
+     <filed name="levelUpBeforeCoin"  dataType="char_" index="12" comment="升级前金币"/>
+     <filed name="levelUpAfterCoin"  dataType="char_" index="13" comment="升级后金币"/>
+     <filed name="levelUpBeforeLevel"  dataType="char_" index="14" comment="升级前等级"/>
+     <filed name="levelUpAfterLevel"  dataType="char_" index="15" comment="升级后等级"/>
+     <filed name="levelUpBeforeStar"  dataType="char_" index="16" comment="升级前星级"/>
+     <filed name="levelUpAfterStar"  dataType="char_" index="17" comment="升级后星级"/>
+     <filed name="operateType"  dataType="char_" index="18" comment="操作类型"/>
+     <indexs>
+        <index name="channel_uid_operateType_pt" columns="channel,uid,operateType,pt"/>
+        <index name="channel_name_operateType_pt" columns="channel,name,operateType,pt"/>
+        <index name="channel_petName_operateType_pt" columns="channel,petName,operateType,pt"/>
+     </indexs>
+  </log> 
+   <!-- 在线人数日志 -->
+  <log type="onlineNumLog" table="onlineNumLog_log"  comment="在线人数日志 " sqlExcute="insert into" className="cn.uc.rsyslog.service.impl.BaseService">
+     <filed name="pt" dataType="datetime" index="0" comment="时间"/>
+     <filed name="onlineNum" dataType="int_" index="7" comment="在线人数"/>
+     <indexs>
+        <index name="pt" columns="pt"/>
+     </indexs>
+  </log> 
+   <!-- 活动关卡日志 -->
+  <log type="ActivePvemazeLog" table="ActivePvemazeLog_log"  comment="活动关卡日志" sqlExcute="insert into" className="cn.uc.rsyslog.service.impl.BaseService">
+     <filed name="pt" dataType="datetime" index="0" comment="时间"/>
+     <filed name="channel" dataType="char_" index="1" comment="渠道"/>
+     <filed name="uid" dataType="char_" index="2" comment="账号"/>
+     <filed name="playerId" dataType="long_" index="3"  comment="角色id"/>
+     <filed name="name" dataType="char_" index="4" comment="角色名称"/>
+     <filed name="mazeId"  dataType="int_" index="6" comment="副本ID"/>
+     <filed name="mazeName"  dataType="char_" index="7" comment="副本名称"/>
+     <filed name="coinCost" dataType="int_" index="8"  comment="金币消耗"/>
+     <filed name="ticketCost" dataType="int_" index="9"  comment="门票消耗"/>
+     <filed name="moneyCost" dataType="int_" index="10"  comment="先绑定元宝后元宝消耗"/>
+     <indexs>
+        <index name="channel_uid_pt" columns="channel,uid,pt"/>
+        <index name="channel_name_pt" columns="channel,name,pt"/>
+        <index name="channel_mazeId_pt" columns="channel,mazeId,pt"/>
+        <index name="channel_uid_mazeId_pt" columns="channel,uid,mazeId,pt"/>
+        <index name="channel_name_mazeId_pt" columns="channel,name,mazeId,pt"/>
+     </indexs>
+  </log> 
+   <!-- 光翼日志 -->
+  <log type="LightWingLog" table="ALightWingLog_log"  comment="活光翼日志" sqlExcute="insert into" className="cn.uc.rsyslog.service.impl.BaseService">
+     <filed name="pt" dataType="datetime" index="0" comment="时间"/>
+     <filed name="channel" dataType="char_" index="1" comment="渠道"/>
+     <filed name="uid" dataType="char_" index="2" comment="账号"/>
+     <filed name="playerId" dataType="long_" index="3"  comment="角色id"/>
+     <filed name="name" dataType="char_" index="4" comment="角色名称"/>
+     <filed name="operateType"  dataType="char_" index="6" comment="操作类型"/>
+     <filed name="operateBeforeWingLevel"  dataType="int_" index="7" comment="操作前层数"/>
+     <filed name="operateAfterWingLevel" dataType="int_" index="8"  comment="操作后层数"/>
+     <filed name="operateBeforeWingRank"  dataType="int_" index="9" comment="操作前阶数"/>
+     <filed name="operateAfterWingRank" dataType="int_" index="10"  comment="操作后阶数"/>
+     <filed name="operateBeforeWingValue"  dataType="int_" index="11" comment="操作前数值"/>
+     <filed name="operateAfterWingValue" dataType="int_" index="12"  comment="操作后数值"/>
+     <filed name="operateResult" dataType="char_" index="13"  comment="操作结果"/>
+     <indexs>
+        <index name="channel_uid_pt" columns="channel,uid,pt"/>
+        <index name="channel_name_pt" columns="channel,name,pt"/>
+     </indexs>
+  </log> 
+  <!-- 投资日志 -->
+  <log type="InvestLog" table="InvestLog_log"  comment="投资日志" sqlExcute="insert into" className="cn.uc.rsyslog.service.impl.BaseService">
+     <filed name="pt" dataType="datetime" index="0" comment="时间"/>
+     <filed name="channel" dataType="char_" index="1" comment="渠道"/>
+     <filed name="uid" dataType="char_" index="2" comment="账号"/>
+     <filed name="playerId" dataType="long_" index="3"  comment="角色id"/>
+     <filed name="name" dataType="char_" index="4" comment="角色名称"/>
+     <filed name="investProject"  dataType="char_" index="6" comment="投资项目"/>
+     <filed name="investMoney"  dataType="int_" index="7" comment="投资额度"/>
+     <filed name="investLeftMoney"  dataType="int_" index="8" comment="投资后剩余数量"/>
+     <indexs>
+        <index name="channel_uid_pt" columns="channel,uid,pt"/>
+        <index name="channel_name_pt" columns="channel,name,pt"/>
+        <index name="channel_investProject_pt" columns="channel,investProject,pt"/>
+        <index name="channel_uid_investProject_pt" columns="channel,uid,investProject,pt"/>
+        <index name="channel_name_investProject_pt" columns="channel,name,investProject,pt"/>
+     </indexs>
+  </log> 
+  <!-- 投资奖励领取日志 -->
+  <log type="InvestRewardLog" table="InvestRewardLog_log"  comment="投资奖励领取日志" sqlExcute="insert into" className="cn.uc.rsyslog.service.impl.BaseService">
+     <filed name="pt" dataType="datetime" index="0" comment="时间"/>
+     <filed name="channel" dataType="char_" index="1" comment="渠道"/>
+     <filed name="uid" dataType="char_" index="2" comment="账号"/>
+     <filed name="playerId" dataType="long_" index="3"  comment="角色id"/>
+     <filed name="name" dataType="char_" index="4" comment="角色名称"/>
+     <filed name="result"  dataType="char_" index="6" comment="领取理由"/>
+     <filed name="bindMoney"  dataType="int_" index="7" comment="领取绑定元宝数量"/>
+     <filed name="totalBindMoney"  dataType="int_" index="8" comment="绑定元宝总量"/>
+     <indexs>
+        <index name="channel_uid_pt" columns="channel,uid,pt"/>
+        <index name="channel_name_pt" columns="channel,name,pt"/>
+        <index name="channel_tresult_pt" columns="channel,result,pt"/>
+        <index name="channel_uid_result_pt" columns="channel,uid,result,pt"/>
+        <index name="channel_name_result_pt" columns="channel,name,result,pt"/>
+     </indexs>
+  </log> 
+   <!-- 天劫战场贡献日志 -->
+  <log type="endFieldFightLog" table="endFieldFightLog_log"  comment="天劫战场贡献日志" sqlExcute="insert into" className="cn.uc.rsyslog.service.impl.BaseService">
+     <filed name="pt" dataType="datetime" index="0" comment="时间"/>
+     <filed name="channel" dataType="char_" index="1" comment="渠道"/>
+     <filed name="uid" dataType="char_" index="2" comment="账号"/>
+     <filed name="playerId" dataType="long_" index="3"  comment="角色id"/>
+     <filed name="name" dataType="char_" index="4" comment="角色名称"/>
+     <filed name="totalContribute"  dataType="int_" index="6" comment="获得总贡献"/>
+     <filed name="rank"  dataType="int_" index="8" comment="名次"/>
+     <filed name="result"  dataType="char_" index="9" comment="战斗结果"/>
+     <filed name="join_time"  dataType="char_" index="10" comment="加入战斗时间"/>
+     <indexs>
+        <index name="channel_uid_pt" columns="channel,uid,pt"/>
+        <index name="channel_name_pt" columns="channel,name,pt"/>
+     </indexs>
+  </log> 
+  <!-- 义博云天奖励查询日志 -->
+  <log type="RichHilosLog" table="RichHilosLog_log"  comment="义博云天奖励查询日志" sqlExcute="insert into" className="cn.uc.rsyslog.service.impl.BaseService">
+     <filed name="pt" dataType="datetime" index="0" comment="时间"/>
+     <filed name="channel" dataType="char_" index="1" comment="渠道"/>
+     <filed name="uid" dataType="char_" index="2" comment="账号"/>
+     <filed name="playerId" dataType="long_" index="3"  comment="角色id"/>
+     <filed name="name" dataType="char_" index="4" comment="角色名称"/>
+     <filed name="rewardContent"  dataType="string" index="6" comment="全服奖励"/>
+     <filed name="uniquenessKey"  dataType="string" index="7" comment="唯一标示"/>
+     <filed name="sendCount"  dataType="long_" index="8" comment="发放数量"/>
+     <indexs>
+        <index name="channel_uid_pt" columns="channel,uid,pt"/>
+        <index name="channel_name_pt" columns="channel,name,pt"/>
+     </indexs>
+  </log> 
+  <!--  不灭金身日志 -->
+  <log type="GoldenBodyLog" table="GoldenBodyLog_log"  comment="不灭金身日志" sqlExcute="insert into" className="cn.uc.rsyslog.service.impl.BaseService">
+     <filed name="pt" dataType="datetime" index="0" comment="时间"/>
+     <filed name="channel" dataType="char_" index="1" comment="渠道"/>
+     <filed name="uid" dataType="char_" index="2" comment="账号"/>
+     <filed name="playerId" dataType="long_" index="3"  comment="角色id"/>
+     <filed name="name" dataType="char_" index="4" comment="角色名称"/>
+     <filed name="realm"  dataType="string" index="6" comment="金身境界变化"/>
+     <filed name="level"  dataType="string" index="7" comment="等级变化"/>
+     <filed name="layer"  dataType="string" index="8" comment="层数变化"/>
+     <indexs>
+        <index name="channel_uid_pt" columns="channel,uid,pt"/>
+        <index name="channel_name_pt" columns="channel,name,pt"/>
+     </indexs>
+  </log> 
+</logs>

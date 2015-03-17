@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function-configuration>
+	<!-- 系统函数默认配置 -->
+	<bean class="org.wltea.expression.function.SystemFunctions">
+		<function name="CONTAINS" method="contains">
+			<parameter-type>java.lang.String</parameter-type>
+			<parameter-type>java.lang.String</parameter-type>
+		</function>
+		<function name="STARTSWITH" method="startsWith">
+			<parameter-type>java.lang.String</parameter-type>
+			<parameter-type>java.lang.String</parameter-type>
+		</function>
+		<function name="ENDSWITH" method="endsWith">
+			<parameter-type>java.lang.String</parameter-type>
+			<parameter-type>java.lang.String</parameter-type>
+		</function>
+		<function name="CALCDATE" method="calcDate">
+			<parameter-type>java.util.Date</parameter-type>
+			<parameter-type>int</parameter-type>
+			<parameter-type>int</parameter-type>
+			<parameter-type>int</parameter-type>
+			<parameter-type>int</parameter-type>
+			<parameter-type>int</parameter-type>
+			<parameter-type>int</parameter-type>
+		</function>
+		<function name="SYSDATE" method="sysDate" />
+		<function name="DAYEQUALS" method="dayEquals">
+			<parameter-type>java.util.Date</parameter-type>
+			<parameter-type>java.util.Date</parameter-type>
+		</function>
+	</bean>
+	
+	<!-- 用户函数配置  请在这里定制您自己的函数-->
+<!-- 
+	<bean class="org.wltea.expression.test.TestFunctions">
+		<constructor-args>
+			<constructor-arg type="java.lang.Integer">123</constructor-arg>
+			<constructor-arg type="java.lang.String">aa</constructor-arg>
+		</constructor-args>
+		<function name="问好" method="sayHello">
+			<parameter-type>java.lang.String</parameter-type>
+		</function>
+	</bean>
+ -->
+  <bean class="cn.uc.rsyslog.util.SelfFunction">
+		<function name="goldType" method="goldType">
+			<parameter-type>java.lang.String</parameter-type>
+		</function>
+		<function name="arenaUseProp" method="arenaUseProp">
+			<parameter-type>java.lang.String</parameter-type>
+			<parameter-type>java.lang.String</parameter-type>
+		</function>
+		<function name="rankFighting" method="rankFighting">
+			<parameter-type>java.lang.String</parameter-type>
+		</function>
+		<function name="levelUpReward" method="levelUpReward">
+			<parameter-type>java.lang.String</parameter-type>
+			<parameter-type>java.lang.String</parameter-type>
+			<parameter-type>java.lang.String</parameter-type>
+			<parameter-type>java.lang.String</parameter-type>
+			<parameter-type>java.lang.String</parameter-type>
+			<parameter-type>java.lang.String</parameter-type>
+			<parameter-type>java.lang.String</parameter-type>
+		</function>
+		<function name="joinResult" method="joinResult">
+			<parameter-type>java.lang.String</parameter-type>
+		</function>
+		<function name="opponent" method="getOpponent">
+			<parameter-type>java.lang.String</parameter-type>
+		</function>
+		<function name="stage" method="stage">
+			<parameter-type>java.lang.String</parameter-type>
+		</function>
+		<function name="gem" method="gem">
+			<parameter-type>java.lang.String</parameter-type>
+		</function>
+		<function name="PROP" method="prop">
+			<parameter-type>java.lang.String</parameter-type>
+			<parameter-type>java.lang.String</parameter-type>
+		</function>
+	</bean>
+
+</function-configuration>

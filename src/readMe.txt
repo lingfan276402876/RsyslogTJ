@@ -1,0 +1,29 @@
+运行：
+1.配置参数：properties/config.properties
+		##数据库连接参数
+		jdbc1.mysqlUrl=jdbc:mysql://192.168.105.23:3306/test1?autoReconnect=true&useUnicode=true&characterEncoding=utf-8
+		##数据库连接用户名
+		jdbc1.username=root
+		##数据库连接密码
+		jdbc1.password=1234
+		##数据库连接参数
+		jdbc2.mysqlUrl=jdbc:mysql://192.168.105.23:3306/rsyslog?autoReconnect=true&useUnicode=true&characterEncoding=utf-8
+		##数据库连接用户名
+		jdbc2.username=root
+		##数据库连接密码
+		jdbc2.password=1234
+		##redis连接url
+		jedisUrl=192.168.101.109
+		##redis连接端口
+		jedisPort=6380
+		##开启的tcp端口
+		port=1514
+		##本机地址
+        server=192.168.105.87
+        ##每次处理多少条日志
+		pageSize=10
+2.配置properties/log4j.properties
+   修改./为自定义目录
+      
+3.运行rsyslog.jar 
+java -Dfile.encoding=UTF8 -Xms2g -Xmx2g -Xmn1g -jar rsyslog.jar

@@ -1,0 +1,32 @@
+<!-- 
+NPC挑战关卡配置文件
+id:关卡标志
+id:　1简单  2普通   3困难
+isBoss:是否是boss
+npcs:每关的npc配置,对应npc.xml配置文件
+挑战成功一个npc后，所得奖励在npc_reward.xml中配置
+
+注：本配置文件由策划同事维护
+ -->
+<gates>
+	   <gate id="1" name="1星螳螂"  npcs="100,101,102" />
+	   <gate id="2" name="2星螳螂"  npcs="103,104,105" />
+	   <gate id="3" name="3星螳螂"  npcs="106,107,108" />
+	   <gate id="4" name="4星螳螂"  npcs="109,110,111" />
+	   <gate id="5" name="5星螳螂"  npcs="112,113,114" />
+	   <gate id="6" name="6星螳螂"  npcs="115,116,117" />	   
+
+	   <gate id="7" name="1星仙鹤"  npcs="118,119,120" />
+	   <gate id="8" name="2星仙鹤"  npcs="121,122,123" />
+	   <gate id="9" name="3星仙鹤"  npcs="124,125,126" />
+	   <gate id="10" name="4星仙鹤"  npcs="127,128,129" />
+	   <gate id="11" name="5星仙鹤"  npcs="130,131,132" />
+	   <gate id="12" name="6星仙鹤"  npcs="133,134,135" />	   
+	   
+	   <gate id="13" name="1星熊猫"  npcs="136,137,138" />
+	   <gate id="14" name="2星熊猫"  npcs="139,140,141" />
+	   <gate id="15" name="3星熊猫"  npcs="142,143,144" />
+	   <gate id="16" name="4星熊猫"  npcs="145,146,147" />
+	   <gate id="17" name="5星熊猫"  npcs="148,149,150" />
+	   <gate id="18" name="6星熊猫"  npcs="151,152,153" />	   
+</gates>

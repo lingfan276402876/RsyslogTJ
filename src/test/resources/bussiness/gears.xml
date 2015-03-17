@@ -1,0 +1,292 @@
+<gears>
+<!-- 白装 -->
+    <gearSet id="1" quality="0" group="1" level="10" weight="10" price="55">
+        <gear id="1" abilities="1,0,0,0" type="0" name="斗斗头巾"/>
+        <gear id="2" abilities="0,1,0,0" type="1" name="斗斗手套"/>
+        <gear id="3" abilities="0,0,7,0" type="2" name="斗斗服"/>
+        <gear id="4" abilities="0,0,0,1" type="3" name="斗斗鞋"/>
+    </gearSet>
+    <gearSet id="2" quality="0" group="2" level="10" weight="10" price="55">
+        <gear id="5" abilities="2,0,0,0" type="0" name="挑斗头巾"/>
+        <gear id="6" abilities="0,2,0,0" type="1" name="挑斗手套"/>
+        <gear id="7" abilities="0,0,14,0" type="2" name="挑斗服"/>
+        <gear id="8" abilities="0,0,0,2" type="3" name="挑斗鞋"/>
+    </gearSet>
+	<!-- 绿装 -->
+	<gearSet id="3" quality="1" group="3" level="12" weight="10" price="55">
+        <gear id="9" abilities="3,0,0,0" type="0" name="格斗头巾"/>
+        <gear id="10" abilities="0,3,0,0" type="1" name="格斗手套"/>
+        <gear id="11" abilities="0,0,21,0" type="2" name="格斗服"/>
+        <gear id="12" abilities="0,0,0,3" type="3" name="格斗鞋"/>
+    </gearSet>
+    <gearSet id="4" quality="1" group="4" level="12" weight="10" price="55">
+        <gear id="13" abilities="4,0,0,0" type="0" name="拳斗头巾"/>
+        <gear id="14" abilities="0,4,0,0" type="1" name="拳斗手套"/>
+        <gear id="15" abilities="0,0,28,0" type="2" name="拳斗服"/>
+        <gear id="16" abilities="0,0,0,4" type="3" name="拳斗鞋"/>
+    </gearSet>
+    <gearSet id="5" quality="1" group="5" level="14" weight="10" price="55">
+        <gear id="17" abilities="5,0,0,0" type="0" name="忍者护额"/>
+        <gear id="18" abilities="0,5,0,0" type="1" name="忍者拳套"/>
+        <gear id="19" abilities="0,0,35,0" type="2" name="忍者服"/>
+        <gear id="20" abilities="0,0,0,5" type="3" name="忍者鞋"/>
+    </gearSet>
+    <!-- 蓝装 -->
+    <gearSet id="6" quality="2" group="6" level="16" weight="20" price="55">
+        <gear id="21" abilities="6,0,0,0" type="0" name="格斗头巾"/>
+        <gear id="22" abilities="0,6,0,0" type="1" name="格斗手套"/>
+        <gear id="23" abilities="0,0,42,0" type="2" name="格斗服"/>
+        <gear id="24" abilities="0,0,0,6" type="3" name="格斗鞋"/>
+    </gearSet>
+    <gearSet id="7" quality="2" group="7" level="16" weight="20" price="55">
+        <gear id="25" abilities="6,0,0,0" type="0" name="拳斗头巾"/>
+        <gear id="26" abilities="0,6,0,0" type="1" name="拳斗手套"/>
+        <gear id="27" abilities="0,0,42,0" type="2" name="拳斗服"/>
+        <gear id="28" abilities="0,0,0,6" type="3" name="拳斗鞋"/>
+    </gearSet>
+    <gearSet id="8" quality="2" group="8" level="18" weight="20" price="55">
+        <gear id="29" abilities="7,0,0,0" type="0" name="忍者护额"/>
+        <gear id="30" abilities="0,7,0,0" type="1" name="忍者拳套"/>
+        <gear id="31" abilities="0,0,49,0" type="2" name="忍者服"/>
+        <gear id="32" abilities="0,0,0,7" type="3" name="忍者鞋"/>
+    </gearSet>
+    <gearSet id="9" quality="2" group="9" level="18" weight="20" price="55">
+        <gear id="33" abilities="7,0,0,0" type="0" name="螳螂头饰"/>
+        <gear id="34" abilities="0,7,0,0" type="1" name="螳螂手套"/>
+        <gear id="35" abilities="0,0,49,0" type="2" name="螳螂服"/>
+        <gear id="36" abilities="0,0,0,7" type="3" name="螳螂鞋"/>
+    </gearSet>
+    <gearSet id="10" quality="2" group="10" level="18" weight="20" price="55">
+        <gear id="37" abilities="8,0,0,0" type="0" name="仙鹤头饰"/>
+        <gear id="38" abilities="0,8,0,0" type="1" name="仙鹤拳套"/>
+        <gear id="39" abilities="0,0,56,0" type="2" name="仙鹤服"/>
+        <gear id="40" abilities="0,0,0,8" type="3" name="仙鹤鞋"/>
+    </gearSet>
+    <gearSet id="11" quality="2" group="11" level="18" weight="20" price="55">
+        <gear id="41" abilities="8,0,0,0" type="0" name="熊猫头饰"/>
+        <gear id="42" abilities="0,8,0,0" type="1" name="熊猫拳套"/>
+        <gear id="43" abilities="0,0,56,0" type="2" name="熊猫服"/>
+        <gear id="44" abilities="0,0,0,8" type="3" name="熊猫鞋"/>
+    </gearSet>
+    <gearSet id="12" quality="2" group="12" level="18" weight="3" price="55">
+        <gear id="45" abilities="11,0,0,0" type="0" name="浣熊头饰"/>
+        <gear id="46" abilities="0,11,0,0" type="1" name="浣熊拳套"/>
+        <gear id="47" abilities="0,0,77,0" type="2" name="浣熊服"/>
+        <gear id="48" abilities="0,0,0,11" type="3" name="浣熊鞋"/>
+    </gearSet>
+    <gearSet id="20" quality="2" group="20" level="16" weight="20" price="55">
+        <gear id="77" abilities="6,0,0,0" type="0" name="骑士头盔"/>
+        <gear id="78" abilities="0,6,0,0" type="1" name="骑士手套"/>
+        <gear id="79" abilities="0,0,42,0" type="2" name="骑士服"/>
+        <gear id="80" abilities="0,0,0,6" type="3" name="骑士鞋"/>
+    </gearSet>
+    <gearSet id="21" quality="2" group="21" level="18" weight="20" price="55">
+        <gear id="81" abilities="7,0,0,0" type="0" name="维京头盔"/>
+        <gear id="82" abilities="0,7,0,0" type="1" name="维京拳套"/>
+        <gear id="83" abilities="0,0,49,0" type="2" name="维京服"/>
+        <gear id="84" abilities="0,0,0,7" type="3" name="维京鞋"/>
+    </gearSet>
+    <gearSet id="22" quality="2" group="22" level="18" weight="20" price="55">
+        <gear id="85" abilities="8,0,0,0" type="0" name="犀牛头盔"/>
+        <gear id="86" abilities="0,8,0,0" type="1" name="犀牛拳套"/>
+        <gear id="87" abilities="0,0,56,0" type="2" name="犀牛服"/>
+        <gear id="88" abilities="0,0,0,8" type="3" name="犀牛鞋"/>
+    </gearSet>
+    <gearSet id="23" quality="2" group="23" level="18" weight="20" price="55">
+        <gear id="89" abilities="9,0,0,0" type="0" name="幕府头盔"/>
+        <gear id="90" abilities="0,9,0,0" type="1" name="幕府拳套"/>
+        <gear id="91" abilities="0,0,63,0" type="2" name="幕府服"/>
+        <gear id="92" abilities="0,0,0,9" type="3" name="幕府鞋"/>
+    </gearSet>
+    <gearSet id="24" quality="2" group="24" level="18" weight="20" price="55">
+        <gear id="93" abilities="9,0,0,0" type="0" name="勇者头盔"/>
+        <gear id="94" abilities="0,9,0,0" type="1" name="勇者拳套"/>
+        <gear id="95" abilities="0,0,63,0" type="2" name="勇者服"/>
+        <gear id="96" abilities="0,0,0,9" type="3" name="勇者鞋"/>
+    </gearSet>
+    <gearSet id="25" quality="2" group="25" level="18" weight="3" price="55">
+        <gear id="97" abilities="11,0,0,0" type="0" name="诅咒头盔"/>
+        <gear id="98" abilities="0,11,0,0" type="1" name="诅咒拳套"/>
+        <gear id="99" abilities="0,0,77,0" type="2" name="诅咒服"/>
+        <gear id="100" abilities="0,0,0,11" type="3" name="诅咒鞋"/>
+    </gearSet>
+    
+    <!--紫装-->
+    <gearSet id="13" quality="3" group="6" level="20" weight="1000" price="210">
+        <gear id="49" abilities="10,0,0,0" type="0" name="格斗头巾"/>
+        <gear id="50" abilities="0,10,0,0" type="1" name="格斗手套"/>
+        <gear id="51" abilities="0,0,70,0" type="2" name="格斗服"/>
+        <gear id="52" abilities="0,0,0,10" type="3" name="格斗鞋"/>
+    </gearSet>
+    <gearSet id="14" quality="3" group="7" level="20" weight="1000" price="210">
+        <gear id="53" abilities="10,0,0,0" type="0" name="拳斗头巾"/>
+        <gear id="54" abilities="0,10,0,0" type="1" name="拳斗手套"/>
+        <gear id="55" abilities="0,0,70,0" type="2" name="拳斗服"/>
+        <gear id="56" abilities="0,0,0,10" type="3" name="拳斗鞋"/>
+    </gearSet>
+    <gearSet id="15" quality="3" group="8" level="20" weight="1000" price="210">
+        <gear id="57" abilities="11,0,0,0" type="0" name="忍者护额"/>
+        <gear id="58" abilities="0,11,0,0" type="1" name="忍者拳套"/>
+        <gear id="59" abilities="0,0,77,0" type="2" name="忍者服"/>
+        <gear id="60" abilities="0,0,0,11" type="3" name="忍者鞋"/>
+    </gearSet>
+    <gearSet id="16" quality="3" group="9" level="20" weight="1000" price="210">
+        <gear id="61" abilities="11,0,0,0" type="0" name="螳螂头饰"/>
+        <gear id="62" abilities="0,11,0,0" type="1" name="螳螂手套"/>
+        <gear id="63" abilities="0,0,77,0" type="2" name="螳螂服"/>
+        <gear id="64" abilities="0,0,0,11" type="3" name="螳螂鞋"/>
+    </gearSet>
+    <gearSet id="17" quality="3" group="10" level="25" weight="1000" price="210">
+        <gear id="65" abilities="12,0,0,0" type="0" name="仙鹤头饰"/>
+        <gear id="66" abilities="0,12,0,0" type="1" name="仙鹤拳套"/>
+        <gear id="67" abilities="0,0,84,0" type="2" name="仙鹤服"/>
+        <gear id="68" abilities="0,0,0,12" type="3" name="仙鹤鞋"/>
+    </gearSet>
+    <gearSet id="18" quality="3" group="11" level="25" weight="1000" price="210">
+        <gear id="69" abilities="12,0,0,0" type="0" name="熊猫头饰"/>
+        <gear id="70" abilities="0,12,0,0" type="1" name="熊猫拳套"/>
+        <gear id="71" abilities="0,0,84,0" type="2" name="熊猫服"/>
+        <gear id="72" abilities="0,0,0,12" type="3" name="熊猫鞋"/>
+    </gearSet>
+    <gearSet id="19" quality="3" group="12" level="25" weight="110" price="210">
+        <gear id="73" abilities="15,0,0,0" type="0" name="浣熊头饰"/>
+        <gear id="74" abilities="0,15,0,0" type="1" name="浣熊拳套"/>
+        <gear id="75" abilities="0,0,105,0" type="2" name="浣熊服"/>
+        <gear id="76" abilities="0,0,0,15" type="3" name="浣熊鞋"/>
+    </gearSet>
+    <gearSet id="26" quality="3" group="20" level="20" weight="1000" price="210">
+        <gear id="101" abilities="10,0,0,0" type="0" name="骑士头盔"/>
+        <gear id="102" abilities="0,10,0,0" type="1" name="骑士手套"/>
+        <gear id="103" abilities="0,0,70,0" type="2" name="骑士服"/>
+        <gear id="104" abilities="0,0,0,10" type="3" name="骑士鞋"/>
+    </gearSet>
+    <gearSet id="27" quality="3" group="21" level="20" weight="1000" price="210">
+        <gear id="105" abilities="11,0,0,0" type="0" name="维京头盔"/>
+        <gear id="106" abilities="0,11,0,0" type="1" name="维京拳套"/>
+        <gear id="107" abilities="0,0,77,0" type="2" name="维京服"/>
+        <gear id="108" abilities="0,0,0,11" type="3" name="维京鞋"/>
+    </gearSet>
+    <gearSet id="28" quality="3" group="22" level="25" weight="1000" price="210">
+        <gear id="109" abilities="12,0,0,0" type="0" name="犀牛头盔"/>
+        <gear id="110" abilities="0,12,0,0" type="1" name="犀牛拳套"/>
+        <gear id="111" abilities="0,0,84,0" type="2" name="犀牛服"/>
+        <gear id="112" abilities="0,0,0,12" type="3" name="犀牛鞋"/>
+    </gearSet>
+    <gearSet id="29" quality="3" group="23" level="25" weight="1000" price="210">
+        <gear id="113" abilities="13,0,0,0" type="0" name="幕府头盔"/>
+        <gear id="114" abilities="0,13,0,0" type="1" name="幕府拳套"/>
+        <gear id="115" abilities="0,0,91,0" type="2" name="幕府服"/>
+        <gear id="116" abilities="0,0,0,13" type="3" name="幕府鞋"/>
+    </gearSet>
+    <gearSet id="30" quality="3" group="24" level="25" weight="1000" price="210">
+        <gear id="117" abilities="13,0,0,0" type="0" name="勇者头盔"/>
+        <gear id="118" abilities="0,13,0,0" type="1" name="勇者拳套"/>
+        <gear id="119" abilities="0,0,91,0" type="2" name="勇者服"/>
+        <gear id="120" abilities="0,0,0,13" type="3" name="勇者鞋"/>
+    </gearSet>
+    <gearSet id="31" quality="3" group="25" level="25" weight="110" price="210">
+        <gear id="121" abilities="15,0,0,0" type="0" name="诅咒头盔"/>
+        <gear id="122" abilities="0,15,0,0" type="1" name="诅咒拳套"/>
+        <gear id="123" abilities="0,0,105,0" type="2" name="诅咒服"/>
+        <gear id="124" abilities="0,0,0,15" type="3" name="诅咒鞋"/>
+    </gearSet>
+    
+    <gearSet id="51" quality="3" group="51" level="50" weight="0" price="210">
+        <gear id="201" abilities="25,0,0,0" type="0" name="狂战头盔"/>
+        <gear id="202" abilities="0,25,0,0" type="1" name="狂战拳甲"/>
+        <gear id="203" abilities="0,0,175,0" type="2" name="狂战铠甲"/>
+        <gear id="204" abilities="0,0,0,25" type="3" name="狂战短靴"/>
+    </gearSet>
+    
+     <!--橙装-->
+    <gearSet id="32" quality="4" group="6" level="50" weight="0" price="210">
+        <gear id="125" abilities="20,0,0,0" type="0" name="格斗头巾"/>
+        <gear id="126" abilities="0,20,0,0" type="1" name="格斗手套"/>
+        <gear id="127" abilities="0,0,140,0" type="2" name="格斗服"/>
+        <gear id="128" abilities="0,0,0,20" type="3" name="格斗鞋"/>
+    </gearSet>
+    <gearSet id="33" quality="4" group="7" level="50" weight="0" price="210">
+        <gear id="129" abilities="20,0,0,0" type="0" name="拳斗头巾"/>
+        <gear id="130" abilities="0,20,0,0" type="1" name="拳斗手套"/>
+        <gear id="131" abilities="0,0,140,0" type="2" name="拳斗服"/>
+        <gear id="132" abilities="0,0,0,20" type="3" name="拳斗鞋"/>
+    </gearSet>
+    <gearSet id="34" quality="4" group="8" level="50" weight="0" price="210">
+        <gear id="133" abilities="22,0,0,0" type="0" name="忍者护额"/>
+        <gear id="134" abilities="0,22,0,0" type="1" name="忍者全套"/>
+        <gear id="135" abilities="0,0,154,0" type="2" name="忍者服"/>
+        <gear id="136" abilities="0,0,0,22" type="3" name="忍者鞋"/>
+    </gearSet>
+    <gearSet id="35" quality="4" group="9" level="50" weight="0" price="210">
+        <gear id="137" abilities="22,0,0,0" type="0" name="螳螂头饰"/>
+        <gear id="138" abilities="0,22,0,0" type="1" name="螳螂手套"/>
+        <gear id="139" abilities="0,0,154,0" type="2" name="螳螂服"/>
+        <gear id="140" abilities="0,0,0,22" type="3" name="螳螂鞋"/>
+    </gearSet>
+    <gearSet id="36" quality="4" group="10" level="50" weight="0" price="210">
+        <gear id="141" abilities="24,0,0,0" type="0" name="仙鹤头饰"/>
+        <gear id="142" abilities="0,24,0,0" type="1" name="仙鹤拳套"/>
+        <gear id="143" abilities="0,0,168,0" type="2" name="仙鹤服"/>
+        <gear id="144" abilities="0,0,0,24" type="3" name="仙鹤鞋"/>
+    </gearSet>
+    <gearSet id="37" quality="4" group="11" level="50" weight="0" price="210">
+        <gear id="145" abilities="24,0,0,0" type="0" name="熊猫头饰"/>
+        <gear id="146" abilities="0,24,0,0" type="1" name="熊猫拳套"/>
+        <gear id="147" abilities="0,0,168,0" type="2" name="熊猫服"/>
+        <gear id="148" abilities="0,0,0,24" type="3" name="熊猫鞋"/>
+    </gearSet>
+    <gearSet id="38" quality="4" group="12" level="50" weight="0" price="210">
+        <gear id="149" abilities="30,0,0,0" type="0" name="浣熊头饰"/>
+        <gear id="150" abilities="0,30,0,0" type="1" name="浣熊拳套"/>
+        <gear id="151" abilities="0,0,210,0" type="2" name="浣熊服"/>
+        <gear id="152" abilities="0,0,0,30" type="3" name="浣熊鞋"/>
+    </gearSet>
+    <gearSet id="39" quality="4" group="20" level="50" weight="0" price="210">
+        <gear id="153" abilities="20,0,0,0" type="0" name="骑士头盔"/>
+        <gear id="154" abilities="0,20,0,0" type="1" name="骑士手套"/>
+        <gear id="155" abilities="0,0,140,0" type="2" name="骑士服"/>
+        <gear id="156" abilities="0,0,0,20" type="3" name="骑士鞋"/>
+    </gearSet>
+    <gearSet id="40" quality="4" group="21" level="50" weight="0" price="210">
+        <gear id="157" abilities="22,0,0,0" type="0" name="维京头盔"/>
+        <gear id="158" abilities="0,22,0,0" type="1" name="维京拳套"/>
+        <gear id="159" abilities="0,0,154,0" type="2" name="维京服"/>
+        <gear id="160" abilities="0,0,0,22" type="3" name="维京鞋"/>
+    </gearSet>
+    <gearSet id="41" quality="4" group="22" level="50" weight="0" price="210">
+        <gear id="161" abilities="24,0,0,0" type="0" name="犀牛头盔"/>
+        <gear id="162" abilities="0,24,0,0" type="1" name="犀牛拳套"/>
+        <gear id="163" abilities="0,0,168,0" type="2" name="犀牛服"/>
+        <gear id="164" abilities="0,0,0,24" type="3" name="犀牛鞋"/>
+    </gearSet>
+    <gearSet id="42" quality="4" group="23" level="50" weight="0" price="210">
+        <gear id="165" abilities="26,0,0,0" type="0" name="幕府头盔"/>
+        <gear id="166" abilities="0,26,0,0" type="1" name="幕府拳套"/>
+        <gear id="167" abilities="0,0,182,0" type="2" name="幕府服"/>
+        <gear id="168" abilities="0,0,0,26" type="3" name="幕府鞋"/>
+    </gearSet>
+    <gearSet id="43" quality="4" group="24" level="50" weight="0" price="210">
+        <gear id="169" abilities="26,0,0,0" type="0" name="勇者头盔"/>
+        <gear id="170" abilities="0,26,0,0" type="1" name="勇者拳套"/>
+        <gear id="171" abilities="0,0,182,0" type="2" name="勇者服"/>
+        <gear id="172" abilities="0,0,0,26" type="3" name="勇者鞋"/>
+    </gearSet>
+    <gearSet id="44" quality="4" group="25" level="50" weight="0" price="210">
+        <gear id="173" abilities="30,0,0,0" type="0" name="诅咒头盔"/>
+        <gear id="174" abilities="0,30,0,0" type="1" name="诅咒拳套"/>
+        <gear id="175" abilities="0,0,210,0" type="2" name="诅咒服"/>
+        <gear id="176" abilities="0,0,0,30" type="3" name="诅咒鞋"/>
+    </gearSet>
+    <gearSet id="52" quality="4" group="51" level="50" weight="0" price="210">
+        <gear id="205" abilities="45,0,0,0" type="0" name="狂战头盔"/>
+        <gear id="206" abilities="0,45,0,0" type="1" name="狂战拳甲"/>
+        <gear id="207" abilities="0,0,315,0" type="2" name="狂战铠甲"/>
+        <gear id="208" abilities="0,0,0,45" type="3" name="狂战短靴"/>
+    </gearSet>
+    <gearSet id="45" quality="4" group="52" level="50" weight="0" price="210">
+        <gear id="177" abilities="40,0,0,0" type="0" name="怒战头盔"/>
+        <gear id="178" abilities="0,40,0,0" type="1" name="怒战拳甲"/>
+        <gear id="179" abilities="0,0,280,0" type="2" name="怒战铠甲"/>
+        <gear id="180" abilities="0,0,0,40" type="3" name="怒战短靴"/>
+    </gearSet>
+</gears>

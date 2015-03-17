@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<rankgoods>
+	<goods id="1" name="超级大力丸" goodsId="41" type="1" cup="20" gold="20" integral="800" timesLimit="-1" count="1"/>
+	<goods id="2" name="超级敏捷丸" goodsId="42" type="1" cup="20" gold="20" integral="800" timesLimit="-1" count="1"/>
+	<goods id="3" name="超级速度丸" goodsId="43" type="1" cup="20" gold="20" integral="800" timesLimit="-1" count="1"/>
+	<goods id="4" name="超级经验丸" goodsId="44" type="1" cup="20" gold="20" integral="800" timesLimit="-1" count="1"/>
+	<goods id="5" name="技能卷轴X100" goodsId="21" type="1" cup="100" gold="100" integral="1200" timesLimit="1" count="100"/>
+	<goods id="6" name="武器卷轴X100" goodsId="22" type="1" cup="100" gold="100" integral="1200" timesLimit="1" count="100"/>
+	<goods id="7" name="力量永久+1" goodsId="16" type="1" cup="500" gold="100" integral="1500" timesLimit="1" count="1"/>
+	<goods id="8" name="敏捷永久+1" goodsId="17" type="1" cup="500" gold="100" integral="1500" timesLimit="1" count="1"/>
+	<goods id="9" name="速度永久+1" goodsId="18" type="1" cup="500" gold="100" integral="1500" timesLimit="1" count="1"/>
+	<goods id="10" name="生命永久+5" goodsId="19" type="1" cup="500" gold="100" integral="1500" timesLimit="1" count="1"/>
+	
+	<goods id="11" name="狂战头盔" goodsId="201" type="2" cup="1000" gold="200" integral="2000" timesLimit="1" count="1"/>
+	<goods id="12" name="狂战拳甲" goodsId="202" type="2" cup="1000" gold="200" integral="2000" timesLimit="1" count="1"/>
+	<goods id="13" name="狂战铠甲" goodsId="203" type="2" cup="1000" gold="200" integral="2000" timesLimit="1" count="1"/>
+	<goods id="14" name="狂战短靴" goodsId="204" type="2" cup="1000" gold="200" integral="2000" timesLimit="1" count="1"/>
+	
+	<goods id="15" name="力量转化丸" goodsId="10" type="1" cup="200" gold="100" integral="1200" timesLimit="3" count="1"/>
+	<goods id="16" name="敏捷转化丸" goodsId="11" type="1" cup="200" gold="100" integral="1200" timesLimit="3" count="1"/>
+	<goods id="17" name="速度转化丸" goodsId="12" type="1" cup="200" gold="100" integral="1200" timesLimit="3" count="1"/>
+	<goods id="18" name="生命转化丸" goodsId="14" type="1" cup="300" gold="100" integral="1200" timesLimit="3" count="1"/>
+</rankgoods>

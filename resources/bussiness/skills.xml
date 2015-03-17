@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<skills>
+	<skill id="1" name="力王附体" rank="1" remark="提高力量点数,每级提高2点" type="0" levelLimit="1" isLearn="true"  class="cn.uc.game.fight.pojo.skill.PowerSkill"/>
+	<skill id="2" name="身手敏捷" rank="2" remark="提高敏捷点数，每级提高2点" type="0" levelLimit="1" isLearn="true"  class="cn.uc.game.fight.pojo.skill.AgilitySkill"/>
+	<skill id="3" name="风驰电掣" rank="2" remark="提高速度点数，每级提高1点" type="0" levelLimit="1" isLearn="true"  class="cn.uc.game.fight.pojo.skill.SpeedSkill"/>
+	<skill id="4" name="身强体壮" rank="3" remark="提高生命点数，每级提高8点" type="0" levelLimit="1" isLearn="true"  class="cn.uc.game.fight.pojo.skill.HealthSkill"/>
+	<skill id="5" name="武器好手" rank="5" remark="从小就使用武器，1级武器伤害提高10点，每级提高2点" type="0" levelLimit="1" isLearn="true"  class="cn.uc.game.fight.pojo.skill.WeaponSkill"/>
+	<skill id="6" name="装死" rank="10" remark="危机时刻救你一命。" type="0" levelLimit="1" isLearn="true"  class="cn.uc.game.fight.pojo.skill.FakeDeathSkill"/>
+	
+	<skill id="7" name="龟甲术" rank="7" remark="龟壳防御力是很强地，1级抵消20%伤害，每级增加5%" type="2" levelLimit="1" isLearn="true" class="cn.uc.game.fight.pojo.skill.IronSkill"/>
+
+	<skill id="8" name="色诱之术" rank="9" remark="略过对手一回合，造成15-25点伤害，每级提高7点" type="1" levelLimit="1" isLearn="true"  class="cn.uc.game.fight.pojo.skill.PrioritySkill"/>
+	<!-- <skill id="9" name="流氓拳法" rank="6" remark="增加空手伤害20%。" type="0" levelLimit="0" nirvana="false"  class="cn.uc.game.fight.pojo.skill.FistSkill"/> -->
+	<skill id="9" name="暴击" rank="6" remark="奋力一击造成双倍伤害，每升一级提高2%" type="0" levelLimit="0" isLearn="true"  class="cn.uc.game.fight.pojo.skill.BerserkSkill"/>
+	<skill id="10" name="皮糙肉厚" rank="12" remark="脸皮厚度增加，受到的伤害减少5%，每级提高1%" type="0" levelLimit="20" isLearn="true"  class="cn.uc.game.fight.pojo.skill.ThickSkill"/>
+	<skill id="11" name="移形换位" rank="13" remark="减肥成功，增加闪避率5%，每级提高2%" type="0" levelLimit="20" isLearn="true"  class="cn.uc.game.fight.pojo.skill.BlinkSkill"/>
+	<skill id="12" name="野球拳" rank="14" remark="造成（力量+速度）x120%的伤害，每级提高15%" type="1" levelLimit="20" isLearn="true"  class="cn.uc.game.fight.pojo.skill.WildFistSkill"/>
+	<skill id="13" name="师父驾到" rank="16" remark="师父出现给徒弟加血，血量=师父等级X5，下次攻击必中" type="3" levelLimit="20" isLearn="false"  class="cn.uc.game.fight.pojo.skill.MasterSkill"/>
+	
+	<skill id="14" name="小宇宙爆发" rank="15" remark="基础属性值增加增加1%，最少增加1点，每级提高1%，马上攻击" type="3" levelLimit="20" isLearn="true"  class="cn.uc.game.fight.pojo.skill.CometSkill"/>
+	<skill id="15" name="通灵召唤" rank="17" remark="造成对手当前生命值35%+7的伤害，每级提高2%" type="1" levelLimit="10" isLearn="true"  class="cn.uc.game.fight.pojo.skill.ToothSkill"/>
+	<skill id="16" name="绝对防御" rank="18" remark="减少并反弹伤害，每级提高反弹4%" type="2" levelLimit="10" isLearn="true"  class="cn.uc.game.fight.pojo.skill.TailGuardSkill"/>
+	<skill id="17" name="来点松果" rank="19" remark="补血20点，吃完后马上行动，每级提高2点" type="3" levelLimit="10" isLearn="true"  class="cn.uc.game.fight.pojo.skill.RecoverSkill"/>
+	<skill id="18" name="吸铁大法" rank="20" remark="5-20点的伤害，10%使对手不使用武器，每级提高4点伤害和成功率" type="1" levelLimit="1" isLearn="true"  class="cn.uc.game.fight.pojo.skill.SealSkill"/>
+	<skill id="19" name="九天十地菩萨摇头怕怕拳" rank="21" remark="造成20点伤害，生命值大于等于一半时，触发几率为20%，生命值小于一半时，触发几率为70%，一次战斗可多次触发。" type="1" levelLimit="1" isLearn="false"  class="cn.uc.game.fight.pojo.skill.FastSplitSkill"/>
+	<skill id="20" name="仙鹤展翅" rank="22" remark="造成40点伤害，生命值大于等于一半时，触发几率为50%，生命值小于一半时，触发几率为20%，一次战斗可多次触发。" type="1" levelLimit="1" isLearn="false"  class="cn.uc.game.fight.pojo.skill.FastSpreadSkill"/>
+	<skill id="21" name="仙鹤空手" rank="21" remark="空手伤害" type="1" levelLimit="1" isLearn="false"  class="cn.uc.game.fight.pojo.skill.HandSkill"/>
+	<skill id="22" name="熊猫滚滚雷" rank="22" remark="被攻击时有50%进行技能反击，造成30点伤害，每级提升40点伤害。一次战斗可多次触发。" type="2" levelLimit="1" isLearn="false"  class="cn.uc.game.fight.pojo.skill.PandaSkill"/>
+	<skill id="23" name="幸运一击" rank="22" remark="必中，随机产生1-6倍（整数倍）伤害，倍数在客户端有画面表现" type="1" levelLimit="50" isLearn="true"  class="cn.uc.game.fight.pojo.skill.LuckyHit"/>
+	<skill id="24" name="致命反击" rank="22" remark="反击伤害提高50%" type="0" levelLimit="50" isLearn="true"  class="cn.uc.game.fight.pojo.skill.FatalHit"/>
+</skills>
